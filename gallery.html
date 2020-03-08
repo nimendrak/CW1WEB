@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo/LankaWhite.png">
+    <title>Kingdom of Tambapaṇṇī | Gallery</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/nav.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/slideshow.css">
+
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<body id="bgColor" style="background: rgba(255,255,255,0);">
+
+<!--gallery page cover-->
+<div class="galleryCover">
+    <header>
+        <div class="h-content">
+            <p style="margin-left: 20px; color: #323232;">nimendra.2019264@iit.ac.lk</p>
+        </div>
+    </header>
+    <!--stat navbar-->
+    <div class="nav">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <div class="nav-content">
+                    <a href="main.html"> <img src="images/logo/logoWithLanka.png" class="logo" id="logo"/></a>
+                    <div class="nav-items">
+                        <a href="#home">HOME</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">DESTINATIONS
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="dropbtn">ACTIVITIES
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+
+                        <a href="#shop">SHOP</a>
+                        <a href="#shop">GALLERY</a>
+
+                        <a href="#sitemap">SITEMAP</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">QUICK VIEW
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#topDest">Top destination</a>
+                                <a href="#bestAct">Best activities</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+            </div>
+        </nav>
+    </div>
+    <!--end navbar-->
+</div>
+
+<!--change background color using RGB channels-->
+<div class="sidenav" title="Change Background Color">
+    <div class="coll1" style="float:left;width: 10%;">
+        <div style="float:left;padding-left: 5px; padding-top:2px; margin-left: 5px; color: white">
+            <p class="fa">&#xf013;</p>
+        </div>
+    </div>
+    <div class="coll2" style="padding-left: 50px; width: 70%;">
+        <div style="padding-top: 17px; float:left;color: white">
+            <div class="ColorPicker">
+                <div class="ChangeColorHead"><i><u>Change Background Color</u></i></div>
+                Red   <label class="inputSlider1"><input type="range" min="0" max="255" step="1" id="red" value="0"/></label><br>
+                Green <label class="inputSlider2"><input type="range" min="0" max="255" step="1" id="green" value="0"/></label><br>
+                Blue  <label class="inputSlider3"><input type="range" min="0" max="255" step="1" id="blue" value="0"/></label><br>
+
+                <!--reset button -->
+                <input type='reset' class="resetColor" id="colorValueReset" value='Reset &raquo;'/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form>
+    <h1 class="header">let's discover a few astonishing destinations!</h1>
+<!--    <div class = "menuBar">
+
+        &lt;!&ndash;drop down list section&ndash;&gt;
+        <div id="DestinationsInput">Destination:</div>
+        <select name='destinationOptions' id='destinationOptions'>
+            <option name="pleaseSelect" value="pleaseSelect" id="pleaseSelect">Please Select a Destination</option>
+            <option name="pathwaysToOldKingdom" value="pathwaysToOldKingdom" id="pathwaysToOldKingdom">Pathways to Old Kingdom</option>
+            <option name="fascinatedCulture" value="fascinatedCulture" id="fascinatedCulture">Fascinated Culture</option>
+            <option name="mistyMountains" value="mistyMountains" id="mistyMountains">Misty Mountains</option>
+            <option name="greenyforests" value="greenyforests" id="greenyforests">Greeny Forests</option>
+            <option name="saltyBeaches" value="saltyBeaches" id="saltyBeaches">Salty Beaches</option>
+        </select>
+
+        &lt;!&ndash;buttons section&ndash;&gt;
+        <input type='reset' class="resetDestinations" value='Reset &raquo;'/> &lt;!&ndash;reset button &ndash;&gt;
+        <input type='button' class="go" id="go" value='Go &raquo;'/> &lt;!&ndash;proceed button&ndash;&gt;
+
+    </div>-->
+
+    <!--placeholder for the destinations-->
+    <div class='container'>
+        <!--<div class="headerThumbnails">or select a thumbnail!</div>-->
+
+        <!--Salty Beaches-->
+        <div class="destinations" id='beaches'>
+            <div class="imagHolder">
+                <img id='beachesImage' src="images/gallery/beachesImageSample.jpg" alt='beachesImageSample' class="sampleImg">
+            </div>
+            <div class='description'>Salty Beaches
+                <div class="subDescription">The pristine strips of beaches located in the coastal area of Sri Lanka</div>
+            </div>
+        </div>
+
+        <!--Greeny Forests-->
+        <div class="destinations" id='forests'>
+            <div class="imagHolder">
+                <img id='forestsImage' src="images/gallery/forestsImageSample.jpg" alt='forestsImageSample' class="sampleImg">
+            </div>
+            <div class='description'>Greeny Forests
+                <div class="subDescription">Most precious gift from the Mother Nature</div>
+            </div>
+        </div>
+
+        <!--Misty Mountains-->
+        <div class="destinations" id='mountains'>
+            <div class="imagHolder">
+                <img id='mountainsImage' src="images/gallery/mountainsImageSample.jpg" alt='mountainsImageSample' class="sampleImg">
+            </div>
+            <div class='description'>Misty Mountains
+                <div class="subDescription">Nestled in the central hill country of Sri Lanka</div>
+            </div>
+        </div>
+
+        <!--Pathways to the Old Kingdom-->
+        <div class="destinations" id='oldKingdom'>
+            <div class="imagHolder">
+                <img id='oldKingdomImage' src="images/gallery/oldKingdomSample.jpg" alt='oldKingdomSample' class="sampleImg">
+            </div>
+            <div class='description'>Pathways to Old Kingdom
+                <div class="subDescription">Destinations that give you flashbacks to the old Kingdom</div>
+            </div>
+        </div>
+
+        <!--Fascinated Culture-->
+        <div class="destinations" id='culture'>
+            <div class="imagHolder">
+                <img id='cultureImage' src="images/gallery/cultureImageSample.jpg" alt='cultureImageSample' class="sampleImg">
+            </div>
+            <div class='description'>Fascinated Culture
+                <div class="subDescription">Religion and Culture combine to create a unique experience</div>
+            </div>
+        </div>
+    </div>
+
+    <!--slide show-->
+    <div class="imagesContainerCLA" id="imagesContainerID">
+
+        <div class="mySlides1">
+            <div class="numbertext">1 / 6</div>
+            <img src="" style="width: 1200px; height: 550px" id="slideShowPhoto1">
+        </div>
+
+        <div class="mySlides1">
+            <div class="numbertext">2 / 6</div>
+            <img src="" style="width: 1200px; height: 550px" id="slideShowPhoto2">
+        </div>
+
+        <div class="mySlides1">
+            <div class="numbertext">3 / 6</div>
+            <img src="" style="width: 1200px; height: 550px" id="slideShowPhoto3">
+        </div>
+
+        <div class="mySlides1">
+            <div class="numbertext">4 / 6</div>
+            <img src="" style="width: 1200px; height: 550px" id="slideShowPhoto4">
+        </div>
+
+        <div class="mySlides1">
+            <div class="numbertext">5 / 6</div>
+            <img src="" style="width: 1200px; height: 550px" id="slideShowPhoto5">
+        </div>
+
+        <div class="mySlides1">
+            <div class="numbertext">6 / 6</div>
+            <img src="" style="width: 1200px; height: 550px" id="slideShowPhoto6">
+        </div>
+
+        <hr class="separator">
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(1)" alt="" id="slideShowPhotoPreview1">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(2)" alt="" id="slideShowPhotoPreview2">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(3)" alt="" id="slideShowPhotoPreview3">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(4)" alt="" id="slideShowPhotoPreview4">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(5)" alt="" id="slideShowPhotoPreview5">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(6)" alt="" id="slideShowPhotoPreview6">
+            </div>
+        </div>
+
+        <!--close button for the slideshow1-->
+        <span class="closeCLA" id="closeID">&times;</span>
+    </div>
+</form>
+    <!--footer starts here-->
+    <!--<footer>
+        <div class="butmm" style="padding-top: 10px">
+
+            <div class="row">
+                <div class="f-col-1">
+                    <div class="f-img">
+                        <img src="images/logo/logoWithLanka.png" style="width: 200px;">
+                    </div>
+                    <div class="para">
+                        <p>
+                            thamba naeciy cgeywgwefg weyfu fyweoif uweofgiwegfiwegf wufigwr fuiww
+                        </p>
+                    </div>
+                </div>
+                <div class="f-col-2">
+                    <a href="fedback.html" class="feed">
+                        <button class="btn">have a feedback</button>
+                    </a>
+                    <a href="#" class="feed">
+                        <button class="btn" style="margin-top: 20px">site map</button>
+                    </a>
+                    <a href="#" class="feed">
+                        <button class="btn" style="margin-top: 20px">editor</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="width: 100%">
+            <div class="links">
+                <a href="main.html">Home</a>
+                <a href="#">Destinations</a>
+                <a href="#">Activities</a>
+                <a href="#">about us</a>
+                <a href="#">contact us</a>
+            </div>
+
+        </div>
+    </footer>-->
+
+    <!--image zoom script-->
+    <script src="js/ImagesZoomScript.js"></script>
+
+    <!--background color change script-->
+    <script src="js/BackgroundColorChangeScript.js"></script>
+
+    <!--slideshow script-->
+    <script src="js/SlideShowScript.js"></script>
+
+</body>
+
+
+</html>
