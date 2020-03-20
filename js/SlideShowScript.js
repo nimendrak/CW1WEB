@@ -49,7 +49,7 @@ document.getElementById("closeID").addEventListener("click", function () {
     document.getElementById("imagesContainerID").style.display="none";
 });
 
-/*//get the user selected destination from the drop down menu
+//get the user selected destination from the drop down menu
 document.getElementById("go").addEventListener("click", function () {
     const option = document.getElementById("destinationOptions").value;
     if (option==="pathwaysToOldKingdom") {
@@ -65,7 +65,7 @@ document.getElementById("go").addEventListener("click", function () {
     } else {
         document.getElementById("imagesContainerID").style.display="none";
     }
-});*/
+});
 
 function mountains() {
     document.getElementById('slideShowPhoto1').src="images/slideshow/mountains/badulla.jpg";

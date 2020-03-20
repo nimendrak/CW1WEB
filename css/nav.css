@@ -12,7 +12,7 @@ nav {
     overflow: hidden;
     z-index:1;
     /*gallery upper gradient*/
-    background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0, 0, 0, 0.8));
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0, 0, 0, 0.7));
     top: 0; /* Position the navbar at the top of the page */
     width: 100%;
 }
