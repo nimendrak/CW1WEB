@@ -27,7 +27,8 @@
 }
 
 .header {
-    margin-top: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
     font-family: "Stylish Classy Font";
     color: #323232;
@@ -278,5 +279,3 @@ footer {
     background-color: #333333;
     transition: 0.5s;
 }
-
-
