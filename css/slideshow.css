@@ -59,7 +59,7 @@ img {
 
 /* Position the "next button" to the right */
 .next {
-    right: 462px;
+    right: 395px;
     border-radius: 3px 0 0 3px;
 }
 
@@ -87,10 +87,10 @@ img {
 /* Container for image text */
 .caption-container {
     z-index: 1; /* Sit on top */
-    margin-top: -576px;
+    margin-top: -527px;
     float: right;
-    width: 428px;
-    height: 549px;
+    width: 360px;
+    height: 500px;
     text-align: left;
     background-color: rgba(255, 255, 255, 0.2);
     padding: 2px 16px;
