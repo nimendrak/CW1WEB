@@ -1,25 +1,64 @@
 /*background color changer*/
-
-const input = document.querySelectorAll("input");
-const bgColor = document.getElementById("bgColor");
-let red;
-let green;
-let blue;
-
-let i;
-for (i = 0; i<input.length; i++) {
-    input[i].addEventListener ("input", function () {
-        red = document.getElementById("red").value;
-        green = document.getElementById("green").value;
-        blue = document.getElementById("blue").value;
-
-        bgColor.style.background = "rgba("+ red + ","+ blue +","+ green +","+ 0.2 +")";
-    })
+function changeBgColor(id) {
+    document.body.style.background = document.getElementById(id).innerHTML;
 }
 
-/*background color reset*/
 document.getElementById("colorValueReset").addEventListener("click", function () {
-    document.getElementById("red").value = "0";
-    document.getElementById("green").value = "0";
-    document.getElementById("blue").value = "0";
-    bgColor.style.background = "rgba("+ 255 + ","+ 255 +","+ 255 +","+ 0 +")";});
+    document.body.style.background = "#ffffff";
+});
+
+
+/*text color changer*/
+const header1 = document.getElementById("header1");
+const description1 = document.getElementById("description1");
+const subDescription1 = document.getElementById("subDescription1");
+
+const description2 = document.getElementById("description2");
+const subDescription2 = document.getElementById("subDescription2");
+
+const description3 = document.getElementById("description3");
+const subDescription3 = document.getElementById("subDescription3");
+
+const description4 = document.getElementById("description4");
+const subDescription4 = document.getElementById("subDescription4");
+
+const description5 = document.getElementById("description5");
+const subDescription5 = document.getElementById("subDescription5");
+
+function changeTxtColor(id) {
+    header1.style.color = document.getElementById(id).innerHTML;
+
+    description1.style.color = document.getElementById(id).innerHTML;
+    subDescription1.style.color = document.getElementById(id).innerHTML;
+
+    description2.style.color = document.getElementById(id).innerHTML;
+    subDescription2.style.color = document.getElementById(id).innerHTML;
+
+    description3.style.color = document.getElementById(id).innerHTML;
+    subDescription3.style.color = document.getElementById(id).innerHTML;
+
+    description4.style.color = document.getElementById(id).innerHTML;
+    subDescription4.style.color = document.getElementById(id).innerHTML;
+
+    description5.style.color = document.getElementById(id).innerHTML;
+    subDescription5.style.color = document.getElementById(id).innerHTML;
+}
+
+document.getElementById("colorValueReset2").addEventListener("click", function () {
+    header1.style.color = "";
+
+    description1.style.color = "";
+    subDescription5.style.color = "";
+
+    description2.style.color = "";
+    subDescription2.style.color = "";
+
+    description3.style.color = "";
+    subDescription3.style.color = "";
+
+    description4.style.color = "";
+    subDescription4.style.color = "";
+
+    description5.style.color = "";
+    subDescription5.style.color = "";
+});

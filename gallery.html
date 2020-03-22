@@ -13,7 +13,7 @@
     <title>Kingdom of Tambapaṇṇī | Gallery</title>
 </head>
 
-<body id="bgColor" style="background: rgba(255,255,255,0);">
+<body id="bgColor" style="background-color: #ffffff">
 
 <!--gallery page cover-->
 <div class="galleryCover">
@@ -54,18 +54,7 @@
 
                         <a href="#shop">SHOP</a>
                         <a href="#shop">GALLERY</a>
-
                         <a href="#sitemap">SITEMAP</a>
-                        <div class="dropdown">
-                            <button class="dropbtn">QUICK VIEW
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="#topDest">Top destination</a>
-                                <a href="#bestAct">Best activities</a>
-                                <a href="#">Link 3</a>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
@@ -76,32 +65,66 @@
     <!--end navbar-->
 </div>
 
-<!--change background color using RGB channels-->
+<!--change background color-->
 <div class="sidenav" title="Change Background Color">
     <div class="coll1" style="float:left;width: 10%;">
         <div style="float:left;padding-left: 5px; padding-top:2px; margin-left: 5px; color: white">
-            <p class="fa">&#xf013;</p>
+            <p class="fa" style="font-size: 15px;">&#xf013;</p>
         </div>
     </div>
     <div class="coll2" style="padding-left: 50px; width: 70%;">
         <div style="padding-top: 17px; float:left;color: white">
             <div class="ColorPicker">
-                <div class="ChangeColorHead"><i><u>Change Background Color</u></i></div>
-                Red <label class="inputSlider1"><input type="range" min="0" max="255" step="1" id="red"
-                                                       value="0"/></label><br>
-                Green <label class="inputSlider2"><input type="range" min="0" max="255" step="1" id="green" value="0"/></label><br>
-                Blue <label class="inputSlider3"><input type="range" min="0" max="255" step="1" id="blue"
-                                                        value="0"/></label><br>
+                <div class="ChangeColorHead" style="font-size: 15px;"><i><u><strong>Change Background
+                    Color</strong></u></i>
+                    <!--reset button -->
+                    <input type='reset' class="resetColor" id="colorValueReset" value='Reset &raquo;'/>
+                </div>
+                <dropdown>
+                    <input id="toggle2" type="checkbox">
+                    <label for="toggle2" class="animate">Pick a Color<i class="fa fa-list float-right"></i></label>
+                    <ul class="animate" style="padding: 0; margin: 0; box-sizing: border-box;">
+                        <li class="animate" id="red" onclick="changeBgColor('red')">#FF9797</li>
+                        <li class="animate" id="blue" onclick="changeBgColor('green')">#C1FF97</li>
+                        <li class="animate" id="green" onclick="changeBgColor('blue')">#97FFFB</li>
+                    </ul>
+                </dropdown>
+            </div>
+        </div>
+    </div>
+</div>
 
-                <!--reset button -->
-                <input type='reset' class="resetColor" id="colorValueReset" value='Reset &raquo;'/>
+<!--change text color-->
+<div class="sidenav2" title="Change Text Color">
+    <div class="coll1" style="float:left;width: 10%;">
+        <div style="float:left;padding-left: 5px; padding-top:2px; margin-left: 5px; color: white">
+            <p class="fa" style="font-size: 15px;">&#xf013;</p>
+        </div>
+    </div>
+    <div class="coll2" style="padding-left: 50px; width: 70%;">
+        <div style="padding-top: 17px; float:left;color: white">
+            <div class="ColorPicker">
+                <div class="ChangeColorHead" style="font-size: 15px;"><i><u><strong>Change Text
+                    Color</strong></u></i>
+                    <!--reset button -->
+                    <input type='reset' class="resetColor" id="colorValueReset2" value='Reset &raquo;'/>
+                </div>
+                <dropdown>
+                    <input id="toggle3" type="checkbox">
+                    <label for="toggle3" class="animate">Pick a Color<i class="fa fa-list float-right"></i></label>
+                    <ul class="animate" style="padding: 0; margin: 0; box-sizing: border-box;">
+                        <li class="animate" id="redTxt" onclick="changeTxtColor('red')">#FF9797</li>
+                        <li class="animate" id="blueTxt" onclick="changeTxtColor('green')">#C1FF97</li>
+                        <li class="animate" id="greenTxt" onclick="changeTxtColor('blue')">#97FFFB</li>
+                    </ul>
+                </dropdown>
             </div>
         </div>
     </div>
 </div>
 
 <form>
-    <h1 class="header">let's discover a few astonishing destinations!</h1>
+    <h1 class="header" id="header1">let's discover a few astonishing destinations!</h1>
 
     <!--placeholder for the destinations-->
     <div class='container'>
@@ -111,8 +134,8 @@
                 <img id='beachesImage' src="images/gallery/beachesImageSample.jpg" alt='beachesImageSample'
                      class="sampleImg">
             </div>
-            <div class='description'>Salty Beaches
-                <div class="subDescription">The pristine strips of beaches located in the coastal area of Sri Lanka
+            <div class='description' id="description1">Salty Beaches
+                <div class="subDescription" id="subDescription1">The pristine strips of beaches located in the coastal area of Sri Lanka
                 </div>
             </div>
         </div>
@@ -123,8 +146,8 @@
                 <img id='forestsImage' src="images/gallery/forestsImageSample.jpg" alt='forestsImageSample'
                      class="sampleImg">
             </div>
-            <div class='description'>Greeny Forests
-                <div class="subDescription">Most precious gift from the Mother Nature</div>
+            <div class='description' id="description2">Greeny Forests
+                <div class="subDescription" id="subDescription2">Most precious gift from the Mother Nature</div>
             </div>
         </div>
 
@@ -134,8 +157,8 @@
                 <img id='mountainsImage' src="images/gallery/mountainsImageSample.jpg" alt='mountainsImageSample'
                      class="sampleImg">
             </div>
-            <div class='description'>Misty Mountains
-                <div class="subDescription">Nestled in the central hill country of Sri Lanka</div>
+            <div class='description' id="description3">Misty Mountains
+                <div class="subDescription" id="subDescription3">Nestled in the central hill country of Sri Lanka</div>
             </div>
         </div>
 
@@ -145,8 +168,8 @@
                 <img id='oldKingdomImage' src="images/gallery/oldKingdomSample.jpg" alt='oldKingdomSample'
                      class="sampleImg">
             </div>
-            <div class='description'>Pathways to Old Kingdom
-                <div class="subDescription">Destinations that give you flashbacks to the old Kingdom</div>
+            <div class='description' id="description4">Pathways to Old Kingdom
+                <div class="subDescription" id="subDescription4">Destinations that give you flashbacks to the old Kingdom</div>
             </div>
         </div>
 
@@ -156,8 +179,8 @@
                 <img id='cultureImage' src="images/gallery/cultureImageSample.jpg" alt='cultureImageSample'
                      class="sampleImg">
             </div>
-            <div class='description'>Fascinated Culture
-                <div class="subDescription">Religion and Culture combine to create a unique experience</div>
+            <div class='description' id="description5">Fascinated Culture
+                <div class="subDescription" id="subDescription5">Religion and Culture combine to create a unique experience</div>
             </div>
         </div>
     </div>
@@ -237,10 +260,9 @@
 </form>
 
 <div class="menuBar">
-
     <!--drop down list section-->
     <div id="DestinationsInput">Destination:</div>
-    <select name='destinationOptions' id='destinationOptions'>
+    <select name='destinationOptions' id='destinationOptions' style="padding: 4px; border-radius: 20px;">
         <option name="pleaseSelect" value="pleaseSelect" id="pleaseSelect">Please Select a Destination</option>
         <option name="pathwaysToOldKingdom" value="pathwaysToOldKingdom" id="pathwaysToOldKingdom">Pathways to Old
             Kingdom
@@ -253,38 +275,33 @@
     </select>
 
     <!--buttons section-->
-    <input type='reset' class="resetDestinations" value='Reset &raquo;'/> <!--reset button -->
+    <input type='reset' id="resetDestinations" class="resetDestinations" value='Reset &raquo;'/> <!--reset button -->
     <input type='button' class="go" id="go" value='Go &raquo;'/> <!--proceed button-->
 
 </div>
-
-<!--image zoom script-->
-<script src="js/ImagesZoomScript.js"></script>
-
-<!--background color change script-->
-<script src="js/BackgroundColorChangeScript.js"></script>
-
-<!--slideshow script-->
-<script src="js/SlideShowScript.js"></script>
 
 <!--footer-->
 <footer class="site-footer">
     <div class="content">
         <div class="footer-grids">
             <div class="footer one" style="height: 235px; border-right: 2px solid #999; padding: 0 40px 0 0;">
-                <h3 style="text-align: right">© Tambapanni</h3>
-                <p style="text-align: right">419, 1,Ramakrishna Road, Wellawatte,<br>Colombo 06, Sri Lanka.</p>
-                <p style="padding-top: 20px; text-align: right">The country’s colourful past has given birth to intriguing tales which have been passed down through the generations. These tales are sewn into the fabric of Sri Lankan society, and they continue to influence the narrative of the country.</p>
+                <h3 style="text-align: right;">© Tambapanni</h3>
+                <p style="text-align: right">419, 1, Ramakrishna Road, Wellawatte,<br>Colombo 06, Sri Lanka.</p>
+                <p style="padding-top: 20px; text-align: right">The country’s colourful past has given birth to
+                    intriguing tales which have been passed down through the generations. These tales are sewn into the
+                    fabric of Sri Lankan society, and they continue to influence the narrative of the country.</p>
                 <div class="clear"></div>
             </div>
             <div class="footer three">
                 <h3 style="padding-left: 40px">About us</h3>
                 <ul>
-                    <p>Join us on this journey of discovery, and let the Tambapanni inspire you to visit this wonderful and exciting island that has brought joy to so many.</p>
-                    <button class="button">Site Map</button> <button class="button">Editor CV</button>
+                    <p>Join us on this journey of discovery, and let the Tambapanni inspire you to visit this wonderful
+                        and exciting island that has brought joy to so many.</p>
+                    <button class="button">Site Map</button>
+                    <button class="button">Editor CV</button>
                 </ul>
             </div>
-            <div class="footer two"  style="padding-left: 100px;">
+            <div class="footer two" style="padding-left: 100px;">
                 <h3>Keep Connected</h3>
                 <ul>
                     <li><a class="fb" href="#"><i></i>Like us on Facebook</a></li>
@@ -311,6 +328,14 @@
     </div>
 </footer>
 
+<!--image zoom script-->
+<script src="js/ImagesZoomScript.js"></script>
+
+<!--background color change script-->
+<script src="js/BackgroundColorChangeScript.js"></script>
+
+<!--slideshow script-->
+<script src="js/SlideShowScript.js"></script>
 
 </body>
 </html>
