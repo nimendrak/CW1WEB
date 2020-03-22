@@ -7,7 +7,6 @@ document.getElementById("colorValueReset").addEventListener("click", function ()
     document.body.style.background = "#ffffff";
 });
 
-
 /*text color changer*/
 const header1 = document.getElementById("header1");
 const description1 = document.getElementById("description1");
@@ -48,7 +47,7 @@ document.getElementById("colorValueReset2").addEventListener("click", function (
     header1.style.color = "";
 
     description1.style.color = "";
-    subDescription5.style.color = "";
+    subDescription1.style.color = "";
 
     description2.style.color = "";
     subDescription2.style.color = "";

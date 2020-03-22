@@ -16,6 +16,13 @@
     background-repeat: no-repeat;
 }
 
+.galleryCover2 {
+    background-image: url("kandyBg.jpg");
+    width: 100%;
+    height: 648px;
+    background-repeat: no-repeat;
+}
+
 .h-content {
     width: 100%;
     background-color: #ffcc00;
@@ -30,7 +37,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
-    font-family: "Stylish Classy Font";
+    font-family: Stylish Classy Font;
     color: #323232;
 }
 
@@ -85,6 +92,60 @@
     border-radius: 30px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1), 0 2px 12px 0 rgba(0, 0, 0, 0.1);
     overflow: hidden;
+}
+
+.photoHolder {
+    float: left;
+    margin-top: -10px;
+    background-color: white;
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1), 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.photoHolder1 {
+    float: left;
+    margin-top: -10px;
+    background-color: white;
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1), 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.photoHolder2 {
+    float: right;
+    margin-top: -260px;
+    margin-left: 40px;
+    background-color: white;
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1), 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.imagHolder2 {
+    width: 300px;
+    height: 310px;
+    overflow: hidden;
+}
+
+.imagHolder {
+    width: 255px;
+    height: 310px;
+    overflow: hidden;
+}
+
+.galleryImag {
+    clear: both;
+    max-height: 250px;
+    width: 500px;
+    overflow: hidden;
+    filter: grayscale(100%) contrast(70%);
+}
+.galleryImag:hover{
+    filter: grayscale(0%) contrast(100%);
 }
 
 .destinations:hover {
@@ -300,5 +361,5 @@ dropdown input:checked ~ ul {
 }
 
 #red, #blue {
-    border-bottom: 3px solid #ffcc00 ;
+    border-bottom: 3px solid #ffcc00;
 }
