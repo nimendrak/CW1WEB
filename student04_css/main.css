@@ -22,6 +22,7 @@ html body {
 
 body {
     background-image: url("noise.jpg");
+    scroll-behavior: smooth;
 }
 
 .galleryCover {
@@ -590,6 +591,7 @@ dropdown input:checked ~ ul {
 }
 
 .zoom {
+    padding: 0;
     transition: transform 1s;
     height: 300px;
     overflow: hidden;
@@ -600,7 +602,13 @@ dropdown input:checked ~ ul {
 }
 
 .zoomout {
+    transform: scale(1);
     transition: transform 1.5s;
+}
+
+.img {
+    width: 110%;
+    height: 300px;
 }
 
 /*shop*/

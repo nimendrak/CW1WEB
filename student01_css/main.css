@@ -26,6 +26,7 @@ html, body {
 
 body{
     background-image: url("noise.jpg");
+    scroll-behavior: smooth;
 }
 
 header {
@@ -265,7 +266,7 @@ header {
 }
 
 /*end slide show css*/
-.img {
+.img2 {
     width: 100%;
     height: 300px;
 }
