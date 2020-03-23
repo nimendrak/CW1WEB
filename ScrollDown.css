@@ -1,0 +1,40 @@
+/* scroll down animation */
+.scroll-downs {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width :35px;
+  height: 55px;
+  top: 40%;
+  z-index: 2;
+}
+.mousey {
+  position: absolute;
+  left: 2px;
+  padding: 10px 15px;
+  height: 25px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 1;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+.scroller {
+  position: absolute;
+  left: 14px;
+  width: 3px;
+  height: 7px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}

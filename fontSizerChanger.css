@@ -1,0 +1,48 @@
+.sidenav {
+  background-color: #ffcc00;
+  position: fixed;
+  padding: -10px;
+  top: 120px;
+  width: 100px;
+  height: 50px;
+  border-radius: 25px 0px 0px 25px;
+  right: -70px;
+  z-index: 1;
+  transition: 0.5s;
+  opacity: 0.9;
+  display: flex;
+}
+
+
+.sidenav:hover {
+  right: 0px;
+  width: 300px;
+  height: 160px;
+  opacity: 0.9;
+  background-color: #323232;
+  transition: 0.5s;
+}
+
+.float-right {
+  float: right;
+}
+
+.fa {
+  font-size: .8em;
+  line-height: 22px !important;
+}
+
+.bigger, .smaller, .reset{
+  width: 80px;
+  height: 30px;
+}
+
+
+.animate {
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Chrome and Safari */
+  -moz-backface-visibility: hidden; /* Firefox */
+}
