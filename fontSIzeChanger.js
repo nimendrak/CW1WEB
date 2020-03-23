@@ -3,14 +3,14 @@ const btnIncrease = document.querySelector('.bigger');
 const btnDecrease = document.querySelector('.smaller');
 const btnReset = document.querySelector('.reset');
 
-var initialSizeForHeader = 50;
+var initialSizeForHeader = 25;
 var initialSizeForDes = 14;
 var initialSizeForName = 17;
 var initialSizeForCName = 18;
 
 var pDesSize = 14;
 var pNameSize = 17;
-var titleSize = 50;
+var titleSize = 25;
 var cNameSize = 18;
 
 /*increase font size*/
@@ -197,7 +197,7 @@ function textReset() {
 
   pDesSize = 14;
   pNameSize = 17;
-  titleSize = 50;
+  titleSize = 25;
   cNameSize = 18;
 }
 

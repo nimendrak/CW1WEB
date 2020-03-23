@@ -697,3 +697,17 @@ select{
 }
 /*end rating css*/
 
+.big-page {
+    text-decoration: none;
+}
+
+.big-page a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffcc00;
+}
+
+.big-page a:hover {
+    color: #ff2f2f;
+}
+

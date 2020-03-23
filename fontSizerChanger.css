@@ -17,7 +17,7 @@
 .sidenav:hover {
   right: 0px;
   width: 300px;
-  height: 160px;
+  height: 180px;
   opacity: 0.9;
   background-color: #323232;
   transition: 0.5s;
@@ -33,8 +33,18 @@
 }
 
 .bigger, .smaller, .reset{
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #ffcc00;
+  color: black;
   width: 80px;
   height: 30px;
+}
+.bigger:hover, .smaller:hover,.reset:hover{
+  background-color: #888888;
+  color: white;
+  border: 1px solid white;
 }
 
 

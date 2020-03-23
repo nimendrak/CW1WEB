@@ -24,14 +24,15 @@ html, body {
 .container {
     display: grid;
     grid-template-columns: 100px 1fr 1fr 1fr 100px;
-    grid-template-rows: 510px 200px 650px 100px 400px auto 95px 350px;
+    grid-template-rows: 560px 200px 650px 100px 400px auto 95px 350px;
 }
 
 /*navigation bar*/
 #navBar {
-    grid-column: 1/4;
+    grid-column: 1/6;
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 100px 130px 130px 130px 130px 130px 130px 130px;
     grid-template-rows: 60px;
     padding: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
@@ -60,6 +61,123 @@ html, body {
     top: 20px;
 }
 
+
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropbtn {
+    font-weight: 600;
+}
+.dropdown .dropbtn {
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 14px 25px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown-content {
+    display: none;
+    position: fixed;
+    border-radius: 20px;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    border-radius: 20px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: 100;
+    z-index: 1;
+}
+a:hover, .dropbtn:hover {
+    background-color: inherit;
+    color: #ffcc00;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: #ffcc00;
+}
+#home{
+    position: relative;
+    top: 33px;
+    left: 60px;
+    grid-column: 2/3;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+#destinations{
+    position: relative;
+    top: 22px;
+    left: 10px;
+    grid-column: 3/4;
+}
+#activities{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    grid-column: 4/5;
+}
+#shop{
+    position: relative;
+    top: 33px;
+    left: 55px;
+    grid-column: 5/6;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+#gallery{
+    position: relative;
+    top: 33px;
+    left: 35px;
+    grid-column: 6/7;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+#quiz{
+    position: relative;
+    top: 33px;
+    left: 40px;
+    grid-column: 7/8;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+#about{
+    position: relative;
+    top: 33px;
+    left: 10px;
+    grid-column: 8/9;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+#home:hover, #destinations:hover, #activities:hover, #shop:hover, #gallery:hover, #quiz:hover, #about:hover{
+    color: #ffcc00;
+    cursor: pointer;
+}
+
+
+
+
 .test {
     transition: 0.3s;
 }
@@ -74,6 +192,7 @@ html, body {
 /*header image*/
 #header-bg {
     grid-column: 1/6;
+    grid-row: 1/2;
     background-image: url("nippaBg.jpg");
     background-size: cover;
     text-align: center;
@@ -88,11 +207,11 @@ html, body {
 #title {
     grid-column: 1/6;
     grid-row: 2/3;
-    font-size: 35px;
+    font-size: 25px;
     padding-left: 30px;
     color: #323232;
     font-family: Stylish, serif;
-    margin-left: 475px;
+    margin-left: 540px;
     background-color: transparent;
 }
 
