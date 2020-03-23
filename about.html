@@ -4,11 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="student03_images/Presentation_page_SS.css">
+    <link rel="stylesheet" type="text/css" href="student04_css/nav.css">
+    <link rel="stylesheet" type="text/css" href="student04_css/main.css">
+    <link rel="stylesheet" type="text/css" href="student04_css/slideshow.css">
+    <link rel="stylesheet" type="text/css" href="student04_css/footer.css">
     <title>Kingdom of Tambapaṇṇī | About us</title>
+    <style>
+        @font-face {
+            font-family: Heavy;
+            src: url("SoinSansNeue-Heavy.otf") format("woff");
+        }
+    </style>
 </head>
 <body>
-<div class="rest">
+<!--gallery page cover-->
+<div class="homeCover">
+    <!--stat navbar-->
+    <div class="nav">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <div class="nav-content">
+                    <a href="homePage.html"> <img src="student04_images/logo/logoWhite.png" class="logo" id="logo"
+                                                  alt=""/></a>
+                    <div class="nav-items">
+                        <a href="homePage.html">HOME</a>
+                        <div class="dropdown" style="margin-top: -3px;">
+                            <button class="dropbtn">DESTINATIONS
+                                <em class="fa fa-caret-down"></em>
+                            </button>
+                            <div class="dropdown-content">
+                                <a class="nav-a" href="allDestination.html"><em style='font-size:24px' class='far'>&#xf14e;</em>
+                                    All destinations</a>
+                                <a class="nav-a" href="kandyDestinationPage.html">Kandy</a>
+                                <a class="nav-a" href="colomboDestinationPage.html">Colombo</a>
+                                <a class="nav-a" href="galleDestinationPage.html">Galle</a>
+                                <a class="nav-a" href="sigiriyaDestinationPage.html">Sigiriya</a>
+                                <a class="nav-a" style="cursor: not-allowed; opacity: 0.5; text-decoration: none; pointer-events: none;" href="#">Nuwara-eliya</a>
+                                <a class="nav-a" style="cursor: not-allowed; opacity: 0.5; text-decoration: none; pointer-events: none;" href="#">Jaffna</a>
+                                <a class="nav-a" style="cursor: not-allowed; opacity: 0.5; text-decoration: none; pointer-events: none;" href="#">Polonnaruwa</a>
+                                <a class="nav-a" style="cursor: not-allowed; opacity: 0.5; text-decoration: none; pointer-events: none;" href="#">Arugambay</a>
+                                <a class="nav-a" style="cursor: not-allowed; opacity: 0.5; text-decoration: none; pointer-events: none;" href="#">Pasikuda</a>
+                            </div>
+                        </div>
 
+                        <div class="dropdown">
+                            <button class="dropbtn" style="margin-top: -3px;">ACTIVITIES
+                                <em class="fa fa-caret-down"></em>
+                            </button>
+                            <div class="dropdown-content">
+                                <a class="nav-a" href="allActivities.html"><em style='font-size:24px' class='fas'>&#xf7c9;</em> All
+                                    activites</a>
+                                <a class="nav-a" href="hiking.html">Hiking</a>
+                                <a class="nav-a" href="#" style="cursor: not-allowed; opacity: 0.5; text-decoration: none; pointer-events: none;">Whale & Dolphin Watching</a>
+                                <a class="nav-a" href="#" style="cursor: not-allowed; opacity: 0.5; text-decoration: none; pointer-events: none;">Elephant Watching</a>
+                                <a class="nav-a" href="#" style="cursor: not-allowed; opacity: 0.5; text-decoration: none; pointer-events: none;">Rafting</a>
+                                <a class="nav-a" href="#" style="cursor: not-allowed; opacity: 0.5; text-decoration: none; pointer-events: none;">Surfing</a>
+                            </div>
+                        </div>
+                        <a href="ProductPage.html">SHOP</a>
+                        <a href="gallery.html">GALLERY</a>
+                        <a href="quiz.html">QUIZ</a>
+                        <a href="aboutUs.html">ABOUT US</a>
+                    </div>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon"
+                       onclick="myFunction()">&#9776;</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!--end navBar-->
+
+<div class="rest">
+    <h1 style="color: #323232; font-family: Heavy, serif;"><i>ABOUT US</i></h1>
     <!--manoj-->
     <div id="card-wrapper-mano">
         <div id="flipcard-mano">
@@ -18,8 +86,8 @@
                 </div>
                 <div>
                     <img id="manoj" class="profileCover" src="student03_images/manoj.jpg" alt="Manoj"
-                         style="width:100%">
-                    <div class="manojName"><p><strong>MANOJ</strong><br><i>LAKSHAN</i></p></div>
+                         style="width:100%;">
+                    <div class="manojName"><p style="font-weight: 800; font-family: Heavy,serif"><strong>MANOJ<br>LAKSHAN</strong></p></div>
                 </div>
                 <div class="container">
                     <div class="about">
@@ -56,7 +124,7 @@
                 <div>
                     <img id="nimendra" class="profileCover" src="student03_images/nimendra.jpg" alt="Nimendra"
                          style="width:100%">
-                    <div class="nimendraName"><p><strong>NIMENDRA</strong><br><i>KARIYAWASAM</i></p></div>
+                    <div class="nimendraName"><p style="font-weight: 800; font-family: Heavy, serif"><strong>NIMENDRA<br>KARIYAWASAM</strong></p></div>
                 </div>
                 <div class="container">
                     <div class="about">
@@ -95,7 +163,7 @@
                 <div>
                     <img id="nipun" class="profileCover" src="student03_images/nipun.jpg" alt="Nipun"
                          style="width:100%">
-                    <div class="nipunName"><p><strong>NIPUN</strong><br><i>WIJETUNGE</i></p></div>
+                    <div class="nipunName"><p style="font-weight: 800; font-family: Heavy, serif"><strong>NIPUN<br>WIJETUNGE</strong></p></div>
                 </div>
                 <div class="container">
                     <div class="about">
@@ -133,7 +201,7 @@
                 <div>
                     <img id="janith" class="profileCover" src="student03_images/janith.jpeg" alt="Janith"
                          style="width:100%">
-                    <div class="janithName"><p><strong>JANITH</strong><br><i>PALIHAWADANA</i></p></div>
+                    <div class="janithName"><p style="font-weight: 800; font-family: Heavy, serif"><strong>JANITH<br>PALIHAWADANA</strong></p></div>
                 </div>
                 <div class="container">
                     <div class="about">

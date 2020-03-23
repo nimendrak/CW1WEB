@@ -12,8 +12,13 @@
 <link rel="stylesheet" type="text/css" href="student04_css/footer.css">
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <style>
+    @font-face {
+        font-family: Stylish;
+        src: url("Stylish-Classy-Font.ttf") format("woff");
+    }
+
     .rate {
-        margin-top: -100px;
+        margin-top: -220px;
         padding-top: 200px;
         background-image: url("student01_images/main/one2.jpg");
         background-repeat: no-repeat;
@@ -83,8 +88,9 @@
 <!--end navBar-->
 
 <!--rating-->
+<label style="font-family: Stylish, serif; font-size: 30px; color: white; margin-left: 40%;">Drop a Feedback!</label>
 <div class="rate">
-    <form id="form">
+    <form id="form" style="margin-top: 3%">
         <label for="name">Name* :</label>
         <input id="name" name="first-name" type="text" placeholder="enter your name.."/>
         <label for="email">Email :</label>
@@ -99,7 +105,7 @@
             <option value="Excellent">Excellent</option>
         </select>
     </form>
-    <input class="submit" type="submit" onclick="submit();" value="submit">
+    <input class="submit" type="submit" onclick="submit();" value="submit" style="margin-top: 20%">
 </div>
 <!--end rating-->
 
