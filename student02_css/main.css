@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+}
+
+.html .body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.galleryCover {
+    background-image: url("galleBg.jpg");
+    width: 100%;
+    height: 648px;
+    background-repeat: no-repeat;
+}
+
+.galleryCover2 {
+    background-image: url("galleBg.jpg");
+    width: 100%;
+    height: 648px;
+    background-repeat: no-repeat;
+}
+
+.h-content {
+    width: 100%;
+    background-color: #ffcc00;
+    padding: 5px 0 5px 0;
+    clear: both;
+    font-size: 10px;
+    float: left;
+    font-weight: 500;
+}
+
+.header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Stylish Classy Font;
+    color: #323232;
+}
+
+.headerThumbnails {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Stylish Classy Font";
+    color: #323232;
+}
+
+.menuBar {
+    clear: both;
+    padding: 20px;
+    margin-bottom: 50px;
+    position: relative;
+    right: 600px;
+    left: 400px;
+    width: 700px;
+    background-color: #ffcc00;
+    border-radius: 30px;
+}
+
+.go, .resetDestinations {
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    border: 0;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+    background-color: #3d3d3d;
+    padding: 5px 10px 5px 10px;
+    color: white;
+}
+
+#DestinationsInput {
+    display: inline-block;
+    padding: 0 10px 0 0;
+}
+
+.container {
+    width: 100%;
+    height: 450px;
+}
+
+.destinations {
+    float: left;
+    margin-top: -10px;
+    margin-left: 40px;
+    background-color: white;
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1), 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.photoHolder {
+    float: left;
+    margin-top: -10px;
+    background-color: white;
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1), 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.photoHolder2 {
+    float: right;
+    margin-top: -260px;
+    margin-left: 40px;
+    background-color: white;
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1), 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.imagHolder2 {
+    width: 300px;
+    height: 310px;
+    overflow: hidden;
+}
+
+.galleryImag {
+    clear: both;
+    max-height: 250px;
+    width: 500px;
+    overflow: hidden;
+    filter: grayscale(100%) contrast(70%);
+}
+.galleryImag:hover{
+    filter: grayscale(0%) contrast(100%);
+}
+
+.destinations:hover {
+    transition: 0.6s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 18px 0 rgba(0, 0, 0, 0.2);
+}
+
+.description {
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffcd00;
+    padding: 15px 0 0 20px;
+    height: 100px;
+    position: relative;
+}
+
+.subDescription {
+    padding: 3px 0 0 0;
+    color: #3d3d3d;
+    position: absolute;
+    width: 214px;
+    font-size: 12px;
+}
+
+.imagHolder {
+    width: 255px;
+    height: 310px;
+    overflow: hidden;
+}
+
+#cultureImage, #forestsImage, #beachesImage, #mountainsImage, #oldKingdomImage {
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 0.3s;
+    height: 350px;
+}
+
+.zoom:hover {
+    transition: transform .4s;
+    transform: scale(1.2);
+}
+
+.zoomOut {
+    transition: transform .4s;
+}
+
+.sampleImg {
+    height: 350px;
+}
+
+/*side nav styling*/
+.ColorPicker {
+    clear: both;
+    width: 200px;
+    border-radius: 30px;
+}
+
+.resetColor {
+    cursor: pointer;
+    border: 0;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+    background-color: #ffcc00;
+    padding: 5px 10px 5px 10px;
+    margin-top: 15px;
+    color: #333333;
+}
+
+.ChangeColorHead {
+    padding-bottom: 15px;
+}
+
+.go:hover, .resetDestinations:hover, .resetColor:hover {
+    background-color: rgba(255, 47, 47, 0.76);
+}
+
+.sidenav {
+    background-color: #ffcc00;
+    position: fixed;
+    padding: -10px;
+    top: 120px;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px 0px 0px 25px;
+    right: -70px;
+    z-index: 1;
+    transition: 0.5s;
+    opacity: 0.9;
+}
+
+.sidenav2 {
+    background-color: #ffcc00;
+    position: fixed;
+    padding: -10px;
+    top: 185px;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px 0px 0px 25px;
+    right: -70px;
+    z-index: 1;
+    transition: 0.5s;
+    opacity: 0.9;
+}
+
+.slider-wrapper {
+    display: block;
+    width: 20px;
+    height: 120px;
+}
+
+.slider-wrapper input {
+    width: 300px;
+    height: 20px;
+    margin-top: -30px;
+    transform-origin: 75px 75px;
+}
+
+.sidenav:hover {
+    right: 0px;
+    width: 400px;
+    height: 160px;
+    opacity: 0.9;
+    background-color: #323232;
+    transition: 0.5s;
+}
+
+.sidenav2:hover {
+    right: 0px;
+    width: 400px;
+    height: 160px;
+    opacity: 0.9;
+    background-color: #333333;
+    transition: 0.5s;
+}
+
+.float-right {
+    float: right;
+}
+
+.fa {
+    font-size: .8em;
+    line-height: 22px !important;
+}
+
+dropdown {
+    display: inline-block;
+}
+
+dropdown label, dropdown ul li {
+    display: block;
+    width: 200px;
+    background: #323232;
+    padding: 15px 15px;
+}
+
+dropdown label:hover, dropdown ul li:hover {
+    background: #ffcc00;
+    color: white;
+    cursor: pointer;
+}
+
+dropdown label {
+    color: #ffcc00;
+    border-left: 4px solid #ffcc00;
+    border-radius: 0 5px 0 0;
+    position: relative;
+    z-index: 2;
+}
+
+dropdown input {
+    display: none;
+}
+
+dropdown input ~ ul {
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    top: -20px;
+    z-index: 1;
+}
+
+dropdown input:checked + label {
+    background: #ffcc00;
+    color: #323232;
+}
+
+dropdown input:checked ~ ul {
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+}
+
+.animate {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Chrome and Safari */
+    -moz-backface-visibility: hidden; /* Firefox */
+}
+
+#red:hover, #redTxt:hover {
+    background-color: #FF9797;
+}
+
+#green:hover, #greenTxt:hover {
+    background-color: #c1ff97;
+}
+
+#blue:hover, #blueTxt:hover {
+    background-color: #97fffb;
+}
+
+#red, #blue {
+    border-bottom: 3px solid #ffcc00;
+}
+.arti{
+    margin: 20px;
+    clear: bottom;
+}
+.title{
+    margin: 20px;
+}
+.row{
+    margin: 60px 0 20px 0;
+}
+
+.photoHolder2{
+    position: relative;
+    bottom: 100px;
+}

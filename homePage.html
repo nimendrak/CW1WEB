@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html xmlns:text-align="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="student04_images/logo/LankaWhite.png">
+
+    <link rel="stylesheet" type="text/css" href="student04_css/nav.css">
+    <link rel="stylesheet" type="text/css" href="student04_css/main.css">
+    <link rel="stylesheet" type="text/css" href="student04_css/slideshow.css">
+    <link rel="stylesheet" type="text/css" href="student04_css/footer.css">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Kingdom of Tambapaṇṇī | Home</title>
+    <style>
+        .best-act {
+            background-image: url("student01_images/main/one.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 675px;
+            margin: 30px 0 20px 0;
+        }
+
+        .shop-back {
+            background-image: url("student01_images/shop/mask.jpg");
+            background-size: cover;
+            /*background-attachment: fixed;*/
+            background-position: center;
+            background-repeat: no-repeat;
+            /*width: 100%;*/
+            min-height: 450px;
+            margin: -30px 0 0 0;
+        }
+    </style>
+</head>
+
+<body id="bgColor" style="background-color: #ffffff">
+
+<!--gallery page cover-->
+<div class="homeCover">
+    <header>
+        <div class="h-content">
+            <p style="margin-left: 20px; color: #323232; font-size: 12px;">manoj.2019264@iit.ac.lk</p>
+        </div>
+    </header>
+    <!--stat navbar-->
+    <div class="nav">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <div class="nav-content">
+                    <a href="homePage.html"> <img src="student04_images/logo/logoWhite.png" class="logo" id="logo"
+                                                  alt=""/></a>
+                    <div class="nav-items">
+                        <a href="homePage.html">HOME</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">DESTINATIONS
+                                <em class="fa fa-caret-down"></em>
+                            </button>
+                            <div class="dropdown-content">
+                                <a class="nav-a" href="allDestination.html"><em style='font-size:24px' class='far'>&#xf14e;</em>
+                                    All destinations</a>
+                                <a class="nav-a" href="kandyDestinationPage.html">Kandy</a>
+                                <a class="nav-a" href="colomboDestinationPage.html">Colombo</a>
+                                <a class="nav-a" href="galleDestinationPage.html">Galle</a>
+                                <a class="nav-a" href="sigiriyaDestinationPage.html">Sigiriya</a>
+                                <a class="nav-a" href="#">Nuwara-eliya</a>
+                                <a class="nav-a" href="#">Jaffna</a>
+                                <a class="nav-a" href="#">Polonnaruwa</a>
+                                <a class="nav-a" href="#">Arugambay</a>
+                                <a class="nav-a" href="#">Pasikuda</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="dropbtn">ACTIVITIES
+                                <em class="fa fa-caret-down"></em>
+                            </button>
+                            <div class="dropdown-content">
+                                <a class="nav-a" href="#"><em style='font-size:24px' class='fas'>&#xf7c9;</em> All
+                                    activites</a>
+                                <a class="nav-a" href="#">Whale & Dolphin Watching</a>
+                                <a class="nav-a" href="#">Hiking</a>
+                                <a class="nav-a" href="#">Elephant Watching</a>
+                                <a class="nav-a" href="#">Rafting</a>
+                                <a class="nav-a" href="#">Surfing</a>
+                            </div>
+                        </div>
+                        <a href="ProductPage.html">SHOP</a>
+                        <a href="gallery.html">GALLERY</a>
+                        <a href="quiz.html">QUIZ</a>
+                        <a href="aboutUs.html">ABOUT US</a>
+                    </div>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon"
+                       onclick="myFunction()">&#9776;</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!--end navBar-->
+
+<!--slide show-->
+<div class="slidImg" style="margin-top: -100px;">
+    <div class="slideshow-container">
+        <!--img 1-->
+        <div class="mySlides fade">
+            <img src="student01_images/slideshow/one.jpg" style="width:100%;" alt="slideShow">
+            <!--                <div class="text">Caption Text</div>-->
+        </div>
+        <!--img 2-->
+        <div class="mySlides fade">
+
+            <img src="student01_images/slideshow/two.jpg" style="width:100%" alt="slideShow">
+            <!--                <div class="text">Caption Two</div>-->
+        </div>
+        <!--img 3-->
+        <div class="mySlides fade">
+
+            <img src="student01_images/main/one.jpg" style="width:100%" alt="slideShow">
+            <!--                <div class="text">Caption Three</div>-->
+        </div>
+        <!--    img 4-->
+        <div class="mySlides fade">
+
+            <img src="student01_images/slideshow/four.jpg" style="width:100%" alt="slideShow">
+            <!--                <div class="text">Caption Three</div>-->
+        </div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <br>
+
+    <div style="text-align:center;margin-top: -50px;z-index: 1;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+</div>
+
+<div class="promo">
+    <Span style="font-size: 20px">The WHO has classified Coronavirus (COVID-19) as a global pandemic.</Span><br>
+    <Span style="color: white">Find out more&nbsp;<a
+            href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen">click this!</a></Span>
+</div>
+<!--top to button-->
+<button onclick="topFunction()" id="upButton" title="Go to top"><em style='font-size:24px;' class='fas'>&#xf139;</em></button>
+<!--end slide show-->
+</div>
+
+<!--top destinations list-->
+<article class="article" style="margin-top: -60px">
+    <div class="topDestination" id="topDest">
+        <div class="topic">
+            <h1 style="margin-top: 30px"><span class="display1" style="color:#323232;">Top destinations</span></h1>
+            <p class="sub-topic-a">
+                The diverse topography of Sri Lanka can take you from golden sandy beaches to
+                rolling green mountains, from rich heritage cities to all night parties in just a matter of
+                hours.
+            </p>
+        </div>
+        <div class="row">
+            <div class="main-col">
+                <div class="col" id="img1">
+                    <a href="colomboDestinationPage.html">
+                        <div class="img-col">
+                            <img src="student01_images/destination/colombo/colomo.jpg" class="img" id="img-one"
+                                 alt="destination">
+                        </div>
+                        <div class="u-div">
+                            <h4 class="u-img"><strong>Colombo</strong></h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col" id="img2">
+                    <a href="kandyDestinationPage.html">
+                        <div class="img-col">
+                            <img src="student01_images/destination/kandy/kandy.jpg" class="img" id="img-two"
+                                 alt="destination">
+                        </div>
+                        <div class="u-div">
+                            <h4 class="u-img"><strong>Kandy</strong></h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col" id="img3">
+                    <a href="galleDestinationPage.html">
+                        <div class="img-col">
+                            <img class="img" src="student01_images/destination/galle/galle.jpg" id="img-three"
+                                 alt="destination">
+                        </div>
+                        <div class="u-div">
+                            <h4 class="u-img"><strong>Galle</strong></h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="big-page" style="">
+            <a href="allDestination.html"><h4 style="font-weight: 800; font-family: Arial, serif; margin-left: 285px;">
+                All destinations <em style="font-size:24px" class="fa">&#xf0a9;</em>
+            </h4></a>
+        </div>
+    </div>
+</article>
+
+<article>
+    <div class="best-act" id="bestAct">
+        <div class="topic" style="color:white;font-weight: 700;font-size:35px;">
+            <h1><span class="display1" id="topAct" style="color:#ffcc00;">Top Activities</span></h1>
+            <p class="sub-topic-a" style="color: white; margin-top: -3%; margin-bottom: 2%;">
+                Sri Lanka offers a multitude of signature experiences that range from exhilarating, adrenaline pumping
+                adventures to relaxing and invigorating meditations.
+            </p>
+        </div>
+        <div class="row" style="padding: 0; margin: 0">
+            <div class="main-col">
+                <div class="col" id="img4">
+                    <a href="#raft">
+                        <div class="img-col">
+                            <img src="student01_images/activities/waterrafting/rafting.jpg" class="img" id="img-four"
+                                 alt="experineceexperience">
+                        </div>
+                        <div class="u-div">
+                            <h4 class="u-img">Rafting</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col" id="img5">
+                    <a href="#wale">
+                        <div class="img-col">
+                            <img src="student01_images/activities/walsewatching/walseWatching.jpg" class="img"
+                                 alt="experineceexperience"
+                                 id="img-five">
+                        </div>
+                        <div class="u-div">
+                            <h4 class="u-img">walesWtaing</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col" id="img6">
+                    <a href="#surf">
+                        <div class="img-col">
+                            <img class="img" src="student01_images/activities/surfing/surf.jpg" id="img-six"
+                                 alt="experience">
+                        </div>
+                        <div class="u-div">
+                            <h4 class="u-img">surfing</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="big-page" id="allPage">
+            <a href=#><h4 style="font-weight: 800; font-family: Arial, serif; margin-left: 285px; margin-bottom: 30px;">All activities <em style="font-size:24px;" class="fa">&#xf0a9;</em></h4></a>
+        </div>
+    </div>
+</article>
+
+<!--shop-->
+<div class="shop-back">
+    <div class="shop">
+        <h1 style="font-family: Stylish,sans-serif; color: #ffcc00">Try our Shop</h1>
+        <p style="font-family: Arial,sans-serif; width: 50%">Grab something to make your journey through the
+            kingdom unforgettable. Check out our shop for more details.</p>
+
+        <a href="student02_images/ProductPage/ProductPage.html">
+            <button class="button">Shop now</button>
+        </a>
+    </div>
+</div>
+
+<!--gallery-->
+<article class="article" style="margin-top: -60px; margin-bottom: 30px;">
+    <div class="topDestination" id="topDest">
+        <div class="topic">
+            <h1 style="margin-top: 75px"><span class="display1" style="color:#323232;">Gallery</span></h1>
+            <p class="sub-topic-a">
+                Observe the true beauty of Sri Lanka throughout the most talent photographers’ eyes! Check out our
+                gallery for more awesome photographs.
+            </p>
+        </div>
+        <div class="big-page" id="allPage">
+            <a href="gallery.html"><h4
+                    style="font-weight: 800; font-family: Arial, serif; margin-left: 720px; margin-bottom: 30px; margin-top: 40px">
+                Gallery <em style="font-size:24px;" class="fa">&#xf0a9;</em></h4></a>
+        </div>
+        <div class="row" style="padding-top: -200px;">
+            <div style="margin:0 20px 0 20px;display: flex;justify-content: center;flex-direction: row;overflow: hidden">
+                <div class="galleryImag">
+                    <img src="student01_images/slideshow/one.jpg" alt="gallery" style="max-height: 300px;width: 500px;">
+                </div>
+                <div class="galleryImag">
+                    <img src="student01_images/slideshow/three.jpg" alt="gallery"
+                         style="max-height: 300px;width: 500px;">
+
+                </div>
+                <div class="galleryImag">
+                    <img src="student01_images/slideshow/two.jpg" alt="gallery" style="max-height: 300px;width: 500px;">
+
+                </div>
+                <div class="galleryImag">
+                    <img src="student01_images/activities/cover.jpg" alt="gallery"
+                         style="max-height: 300px;width: 500px;">
+
+                </div>
+            </div>
+            <div style="margin:0 20px 0 20px;display: flex;justify-content: center;flex-direction: row;overflow: hidden">
+                <div class="galleryImag">
+                    <img src="student01_images/slideshow/four.jpg" alt="gallery"
+                         style="max-height: 300px;width: 500px;">
+                </div>
+                <div class="galleryImag">
+                    <img src="student01_images/destination/sigiriya/sigiriya.jpg" alt="gallery"
+                         style="max-height: 300px;width: 500px;">
+
+                </div>
+                <div class="galleryImag">
+                    <img src="student01_images/destination/nuwaraeliya/one.jpg" alt="gallery"
+                         style="max-height: 300px;width: 500px;">
+
+                </div>
+                <div class="galleryImag">
+                    <img src="student01_images/gallery/kandy-perahera.jpg" alt="gallery"
+                         style="max-height: 300px;width: 500px;">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+
+<!--footer-->
+<footer class="site-footer">
+    <div class="content">
+        <div class="footer-grids">
+            <div class="footer one" style="height: 235px; border-right: 2px solid #999; padding: 0 40px 0 0;">
+                <h3 style="text-align: right;">© Tambapanni</h3>
+                <p style="text-align: right">419, 1, Ramakrishna Road, Wellawatte,<br>Colombo 06, Sri Lanka.</p>
+                <p style="padding-top: 20px; text-align: right">The country’s colourful past has given birth to
+                    intriguing tales which have been passed down through the generations. These tales are sewn into the
+                    fabric of Sri Lankan society, and they continue to influence the narrative of the country.</p>
+                <div class="clear"></div>
+            </div>
+            <div class="footer three">
+                <h3 style="padding-left: 40px">About us</h3>
+                <ul>
+                    <p>Join us on this journey of discovery, and let the Tambapanni inspire you to visit this wonderful
+                        and exciting island that has brought joy to so many.</p>
+                    <a href="siteMap.html">
+                        <button class="button">Site Map</button>
+                    </a>
+                    <a href="cv/cv%20-%20Manoj.html">
+                        <button class="button">Editor CV</button>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer two" style="padding-left: 100px;">
+                <h3>Keep Connected</h3>
+                <ul>
+                    <li><a class="fb" href="#"><i></i>Like us on Facebook</a></li>
+                    <li><a class="fb1" href="#"><i></i>Follow us on Twitter</a></li>
+                </ul>
+                <a href="feedback.html">
+                    <button class="button" style="margin-top: 27px;">Drop a feedback</button>
+                </a>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+        <div class="copy-right-grids">
+            <div class="copy-left">
+                <p class="footer-gd">Tambapanni © 2020 All Rights Reserved</p>
+            </div>
+            <div class="copy-right">
+                <ul>
+                    <li><a href="allDestination.html">Destinations</a></li>
+                    <li><a href="#">Activities</a></li>
+                    <li><a href="ProductPage.html">Shop</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</footer>
+
+<script src="student01_js/slideshow.js"></script>
+<script src="student01_js/main.js"></script>
+
+<script>
+    document.getElementById("img1").addEventListener("mouseover", function () {
+        document.getElementById("img-one").className = "img zoom";
+
+    });
+    document.getElementById("img1").addEventListener("mouseout", function () {
+        document.getElementById("img-one").className = "img zoomout";
+    });
+
+    document.getElementById("img2").addEventListener("mouseover", function () {
+        document.getElementById("img-two").className = "img zoom";
+
+    });
+    document.getElementById("img2").addEventListener("mouseout", function () {
+        document.getElementById("img-two").className = "img zoomout";
+    });
+
+    document.getElementById("img3").addEventListener("mouseover", function () {
+        document.getElementById("img-three").className = "img zoom";
+
+    });
+    document.getElementById("img3").addEventListener("mouseout", function () {
+        document.getElementById("img-three").className = "img zoomout";
+    });
+
+    document.getElementById("img4").addEventListener("mouseover", function () {
+        document.getElementById("img-four").className = "img zoom";
+
+    });
+    document.getElementById("img4").addEventListener("mouseout", function () {
+        document.getElementById("img-four").className = "img zoomout";
+    });
+
+    document.getElementById("img5").addEventListener("mouseover", function () {
+        document.getElementById("img-five").className = "img zoom";
+
+    });
+    document.getElementById("img5").addEventListener("mouseout", function () {
+        document.getElementById("img-five").className = "img zoomout";
+    });
+
+    document.getElementById("img6").addEventListener("mouseover", function () {
+        document.getElementById("img-six").className = "img zoom";
+
+    });
+    document.getElementById("img6").addEventListener("mouseout", function () {
+        document.getElementById("img-six").className = "img zoomout";
+    });
+
+    document.getElementById("img7").addEventListener("mouseover", function () {
+        document.getElementById("img-seven").className = "img zoom";
+
+    });
+    document.getElementById("img7").addEventListener("mouseout", function () {
+        document.getElementById("img-seven").className = "img zoomout";
+    });
+
+    document.getElementById("img8").addEventListener("mouseover", function () {
+        document.getElementById("img-eight").className = "img zoom";
+
+    });
+    document.getElementById("img8").addEventListener("mouseout", function () {
+        document.getElementById("img-eight").className = "img zoomout";
+    });
+
+    document.getElementById("img9").addEventListener("mouseover", function () {
+        document.getElementById("img-nine").className = "img zoom";
+
+    });
+    document.getElementById("img9").addEventListener("mouseout", function () {
+        document.getElementById("img-nine").className = "img zoomout";
+    });
+</script>
+</body>
+</html>

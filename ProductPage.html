@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="16x16" href="LankaWhite.png">
+    <link rel="stylesheet" type="text/css" href="ProductsPageCSS.css">
+    <link rel="stylesheet" type="text/css" href="SignupForm.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" type="text/css" href="ScrollDown.css">
+    <link rel="stylesheet" type="text/css" href="fontSizerChanger.css">
+    <title>Kingdom of Tambapaṇṇī | Shop</title>
+</head>
+
+<body>
+<div id="navBar">
+    <div id="logo"><a href="#"><img src="logoWhite.png" alt="thambapanni"></a></div>
+</div>
+<div class="container" style="margin-top: -35%;">
+
+    <div class="sidenav">
+        <div class="coll1" style="float:left;width: 10%;">
+            <div style="float:left;padding-left: 5px; padding-top:2px; margin-left: 5px; color: white">
+                <p class="fa" style="font-size: 15px;">&#xf013;</p>
+            </div>
+        </div>
+        <div class="coll2" style="padding-left: 50px; width: 70%;">
+            <div style="padding-top: 17px; float:left;color: white">
+                <div class="ColorPicker">
+                    <div class="changeFontSize" style="font-size: 15px;"><i><u><strong>Change Font Size</strong></u></i>
+                        <ul style="list-style-type:none;">
+                            <li>
+                                <button class="bigger">Increase</button>
+                            </li>
+                            <li>
+                                <button class="smaller">Decrease</button>
+                            </li>
+                            <li>
+                                <button class="reset">Reset</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="title" class="title"><h3>Discover Our Store..</h3></div>
+
+    <div id="cart-products"></div>
+    <div id="cart-area">
+        <div id="cart-title">CART</div>
+        <div id="cart-monitor">
+        </div>
+    </div>
+
+    <!--sign up form-->
+    <div id="id01" class="modal1">
+        <span onclick="document.getElementById('id01').style.display='none'; document.getElementById('myModal').style.display = 'none'"
+              class="close" title="Close Modal">&times;</span>
+        <form class="modal1-content" id="myForm">
+            <div class="container1">
+                <h1>Check Out</h1>
+                <p>Please fill in this form to complete purchase.</p>
+                <hr>
+                <label for="name"><b>Full Name</b></label>
+                <input id="name" type="text" placeholder="Your Full Name" name="name" required>
+
+                <label for="address"><b>Address</b></label>
+                <input id="address" type="text" placeholder="Your Address" name="address" required>
+
+                <label for="email"><b>Email</b></label>
+                <input id="email" type="email" placeholder="ex: example@email.com" name="email" required>
+
+                <label for="tele"><b>Telephone</b></label>
+                <input id="tele" type="tel" placeholder="ex: 077XXXXXXX" name="telephone" required>
+
+                <label for="additional"><b>Additional Information</b></label>
+                <textarea id="additional" name="telephone"></textarea>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            class="cancelbtn">Cancel
+                    </button>
+                    <button type="submit" class="signupbtn" onclick="confirmation()">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--sign up for end-->
+
+    <!--footer-->
+    <!-- <footer class="site-footer">-->
+    <div id="footer-content">
+        <div class="footer-grids">
+            <div class="footer one" style="height: 235px; border-right: 2px solid #999; padding: 0 40px 0 0;">
+                <h3 style="text-align: right">© Tambapanni</h3>
+                <p style="text-align: right" class="text">419, 1,Ramakrishna Road, Wellawatte,<br>Colombo 06, Sri Lanka.
+                </p>
+                <p style="padding-top: 20px; text-align: right" class="text">The country’s colourful past has given
+                    birth to intriguing tales which have been passed down through the generations. These tales are sewn
+                    into the fabric of Sri Lankan society, and they continue to influence the narrative of the
+                    country.</p>
+                <div class="clear"></div>
+            </div>
+            <div class="footer three">
+                <h3 style="padding-left: 40px">About us</h3>
+                <ul>
+                    <p class="text">Join us on this journey of discovery, and let the Tambapanni inspire you to visit
+                        this wonderful and exciting island that has brought joy to so many.</p>
+                    <a href="siteMap.html">
+                        <button class="button">Site Map</button>
+                    </a>
+                    <a href="cv/cv%20-%20Janith.html">
+                        <button class="button">Editor CV</button>
+                    </a>
+                </ul>
+            </div>
+            <div id="footer-two" class="footer two" style="padding-left: 50px;">
+                <h3>Keep Connected</h3>
+                <ul>
+                    <li><a class="fb" href="#"><i></i>Like us on Facebook</a></li>
+                    <li><a class="fb1" href="#"><i></i>Follow us on Twitter</a></li>
+                </ul>
+                <button class="button" style="margin-top: 27px;">Drop a feedback</button>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="copy-right-grids">
+            <div class="copy-left">
+                <p class="footer-gd">Tambapanni © 2020 All Rights Reserved</p>
+            </div>
+            <div class="copy-right">
+                <ul>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Activities</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--footer end-->
+</div>
+
+<script src="ProductsPageJS.js"></script>
+<script src="MainJS.js"></script>
+<script src="fontSIzeChanger.js"></script>
+</body>
+</html>

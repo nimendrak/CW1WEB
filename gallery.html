@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" sizes="16x16" href="student04_images/logo/LankaWhite.png">
-    <link rel="stylesheet" type="text/css" href="student04_css/nav.css">
-    <link rel="stylesheet" type="text/css" href="student04_css/main.css">
-    <link rel="stylesheet" type="text/css" href="student04_css/slideshow.css">
-    <link rel="stylesheet" type="text/css" href="student04_css/footer.css">
+    <link rel="stylesheet" type="text/css" href="student04_css/galleryCSS/nav.css">
+    <link rel="stylesheet" type="text/css" href="student04_css/galleryCSS/main.css">
+    <link rel="stylesheet" type="text/css" href="student04_css/galleryCSS/slideshow.css">
+    <link rel="stylesheet" type="text/css" href="student04_css/galleryCSS/footer.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <title>Kingdom of Tambapaṇṇī | Gallery</title>
 </head>
@@ -19,7 +19,7 @@
 <div class="galleryCover">
     <header>
         <div class="h-content">
-            <p style="margin-left: 20px; color: #323232; font-size: 12px;">nimendra.2019264@iit.ac.lk</p>
+            <p style="margin-left: 20px; color: #323232; font-size: 12px;">manoj.2019264@iit.ac.lk</p>
         </div>
     </header>
     <!--stat navbar-->
@@ -27,43 +27,56 @@
         <nav>
             <div class="topnav" id="myTopnav">
                 <div class="nav-content">
-                    <a href="main.html"> <img src="student04_images/logo/logoWhite.png" class="logo" id="logo"/></a>
+                    <a href="homePage.html"> <img src="student04_images/logo/logoWhite.png" class="logo" id="logo"
+                                                  alt=""/></a>
                     <div class="nav-items">
-                        <a href="#home">HOME</a>
+                        <a href="homePage.html">HOME</a>
                         <div class="dropdown">
                             <button class="dropbtn">DESTINATIONS
-                                <i class="fa fa-caret-down"></i>
+                                <em class="fa fa-caret-down"></em>
                             </button>
                             <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
+                                <a class="nav-a" href="allDestination.html"><em style='font-size:24px' class='far'>&#xf14e;</em>
+                                    All destinations</a>
+                                <a class="nav-a" href="kandyDestinationPage.html">Kandy</a>
+                                <a class="nav-a" href="colomboDestinationPage.html">Colombo</a>
+                                <a class="nav-a" href="galleDestinationPage.html">Galle</a>
+                                <a class="nav-a" href="sigiriyaDestinationPage.html">Sigiriya</a>
+                                <a class="nav-a" href="#">Nuwara-eliya</a>
+                                <a class="nav-a" href="#">Jaffna</a>
+                                <a class="nav-a" href="#">Polonnaruwa</a>
+                                <a class="nav-a" href="#">Arugambay</a>
+                                <a class="nav-a" href="#">Pasikuda</a>
                             </div>
                         </div>
 
                         <div class="dropdown">
                             <button class="dropbtn">ACTIVITIES
-                                <i class="fa fa-caret-down"></i>
+                                <em class="fa fa-caret-down"></em>
                             </button>
                             <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
+                                <a class="nav-a" href="#"><em style='font-size:24px' class='fas'>&#xf7c9;</em> All
+                                    activites</a>
+                                <a class="nav-a" href="#">Whale & Dolphin Watching</a>
+                                <a class="nav-a" href="#">Hiking</a>
+                                <a class="nav-a" href="#">Elephant Watching</a>
+                                <a class="nav-a" href="#">Rafting</a>
+                                <a class="nav-a" href="#">Surfing</a>
                             </div>
                         </div>
-
-                        <a href="#shop">SHOP</a>
-                        <a href="#shop">GALLERY</a>
-                        <a href="#sitemap">SITEMAP</a>
+                        <a href="ProductPage.html">SHOP</a>
+                        <a href="gallery.html">GALLERY</a>
+                        <a href="quiz.html">QUIZ</a>
+                        <a href="aboutUs.html">ABOUT US</a>
                     </div>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon"
+                       onclick="myFunction()">&#9776;</a>
                 </div>
-                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-
             </div>
         </nav>
     </div>
-    <!--end navbar-->
 </div>
+<!--end navBar-->
 
 <!--change background color-->
 <div class="sidenav" title="Change Background Color">
@@ -155,7 +168,8 @@
         <!--Misty Mountains-->
         <div class="destinations" id='mountains'>
             <div class="imagHolder">
-                <img id='mountainsImage' src="student04_images/gallery/mountainsImageSample.jpg" alt='mountainsImageSample'
+                <img id='mountainsImage' src="student04_images/gallery/mountainsImageSample.jpg"
+                     alt='mountainsImageSample'
                      class="sampleImg">
             </div>
             <div class='description' id="description3">Misty Mountains
@@ -305,7 +319,7 @@
                     <a href="siteMap.html">
                         <button class="button">Site Map</button>
                     </a>
-                    <a href="cv%20-%20Nimendra.html">
+                    <a href="cv/cv%20-%20Nimendra.html">
                         <button class="button">Editor CV</button>
                     </a>
                 </ul>
@@ -316,7 +330,9 @@
                     <li><a class="fb" href="#"><i></i>Like us on Facebook</a></li>
                     <li><a class="fb1" href="#"><i></i>Follow us on Twitter</a></li>
                 </ul>
-                <button class="button" style="margin-top: 27px;">Drop a feedback</button>
+                <a href="feedback.html">
+                    <button class="button" style="margin-top: 27px;">Drop a feedback</button>
+                </a>
             </div>
 
             <div class="clear"></div>
@@ -327,9 +343,9 @@
             </div>
             <div class="copy-right">
                 <ul>
-                    <li><a href="#">Destinations</a></li>
+                    <li><a href="allDestination.html">Destinations</a></li>
                     <li><a href="#">Activities</a></li>
-                    <li><a href="#">Shop</a></li>
+                    <li><a href="ProductPage.html">Shop</a></li>
                 </ul>
             </div>
             <div class="clear"></div>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="16x16" href="student04_images/logo/LankaWhite.png">
+    <title>Kingdom of Tambapaṇṇī | Welcome</title>
+    <style>
+        @font-face {
+            font-family: Consolas;
+            src: url("student02_css/consola.ttf") format("woff");
+        }
+
+        HTML CSSResult
+        EDIT ON
+            /* Global */
+        html {
+            min-height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            height: calc(100vh - 10em);
+            color: rgba(255, 255, 255, .75);
+            font-family: Consolas;
+            background-image: url("student02_images/main_index2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .line-1 {
+            position: relative;
+            top: 15%;
+            width: 24em;
+            margin: 0 auto;
+            border-right: 2px solid rgba(255, 255, 255, .75);
+            font-size: 30px;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            transform: translateY(-50%);
+        }
+
+        /* Animation */
+        .anim-typewriter {
+            animation: typewriter 4s steps(35) 125ms 1 normal both,
+            blinkTextCursor 500ms steps(35) infinite normal;
+        }
+
+        @keyframes typewriter {
+            from {
+                width: 0;
+            }
+            to {
+                width: 22em;
+            }
+        }
+
+        @keyframes blinkTextCursor {
+            from {
+                border-right-color: rgba(255, 255, 255, .75);
+            }
+            to {
+                border-right-color: transparent;
+            }
+        }
+    </style>
+</head>
+<body>
+<p class="line-1 anim-typewriter">WELCOME TO THE KINGDOM OF THAMBAPANNI..</p>
+
+<script type="text/javascript">
+    window.setTimeout(function () {
+        window.location.href = "homePage.html";
+    }, 4000);
+</script>
+
+</body>
+</html>
