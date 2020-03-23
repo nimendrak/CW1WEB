@@ -105,12 +105,12 @@ p.footer-gd a:hover {
 }
 
 .footer.two ul li a.fb {
-    background: url('../images/footerIcons/social2.png') no-repeat 0px 4px;
+    background: url('../student04_images/footerIcons/social2.png') no-repeat 0px 4px;
     padding: 10px 0 12px 52px;
 }
 
 .footer.two ul li a.fb1 {
-    background: url('../images/footerIcons/social1.png') no-repeat 0px 4px;
+    background: url('../student04_images/footerIcons/social1.png') no-repeat 0px 4px;
     padding: 10px 0 12px 52px;
 }
 
@@ -158,11 +158,11 @@ p.footer-gd a:hover {
 }
 
 .footer.two ul li a.fb:hover {
-    background: url('../images/footerIcons/social3hover.png') no-repeat 0px 4px;
+    background: url('../student04_images/footerIcons/social3hover.png') no-repeat 0px 4px;
 }
 
 .footer.two ul li a.fb1:hover {
-    background: url('../images/footerIcons/social2hover.png') no-repeat 0px 4px;
+    background: url('../student04_images/footerIcons/social2hover.png') no-repeat 0px 4px;
 }
 
 .footer.two ul li a:hover, .copy-right ul li a:hover, .footer.three ul li a:hover {

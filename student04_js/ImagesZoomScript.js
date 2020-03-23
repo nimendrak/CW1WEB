@@ -1,4 +1,4 @@
-/*sample images B&W to color and zoom*/
+/*sample student04_images B&W to color and zoom*/
 
 document.getElementById("culture").addEventListener("mouseover", function () {
     document.getElementById("cultureImage").style.filter = "grayscale(0%)";

@@ -23,7 +23,7 @@ img {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 
-    /*images container animation*/
+    /*student04_images container animation*/
     animation-name: zoom;
     animation-duration: 0.6s;
 }
@@ -33,12 +33,12 @@ img {
     to {transform:scale(1)}
 }
 
-/*Hide the images by default*/
+/*Hide the student04_images by default*/
 .mySlides1 {
     display: none;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
+/* Add a pointer when hovering over the thumbnail student04_images */
 .cursor {
     cursor: pointer;
 }
@@ -109,7 +109,7 @@ img {
     width: 16.66%;
 }
 
-/* Add a transparency effect for thumbnail images */
+/* Add a transparency effect for thumbnail student04_images */
 .demo {
     opacity: 0.6;
 }
