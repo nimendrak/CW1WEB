@@ -1,7 +1,17 @@
+@font-face {
+    font-family: Stylish;
+    src: url("Stylish-Classy-Font.ttf") format("woff");
+}
+
+@font-face {
+    font-family: Arial;
+    src: url("Arial.ttf") format("woff");
+}
+
 /*-- main --*/
 .content {
     width: 100%;
-    font-family: Arial;
+    font-family: Arial, serif;
 }
 
 .footer-grids {
