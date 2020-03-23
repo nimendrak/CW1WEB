@@ -22,8 +22,7 @@ html body {
 
 body {
     background-image: url("noise.jpg");
-    scroll-behavior: smooth;
-}
+    scroll-behavior: smooth;}
 
 .galleryCover {
     background-image: url("GalleryBgOne.jpg");
@@ -98,7 +97,7 @@ body {
 
 .container {
     width: 100%;
-    height: 500px;
+    height: 600px;
 }
 
 .destinations {
@@ -394,12 +393,13 @@ dropdown input:checked ~ ul {
 }
 
 .slidImg img {
-    height: 600px;
+    height: 700px;
 }
 
 
 .slideshow-container {
     width: 100%;
+    height: 600px;
     position: relative;
     margin: auto;
     z-index: -1;
@@ -445,12 +445,12 @@ dropdown input:checked ~ ul {
     top: 0;
 }
 
-
 .dot {
+    margin-top: 5.3%;
+    margin-bottom: 10px;
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 5px;
     background-color: #323232;
     border-radius: 50%;
     display: inline-block;
@@ -472,8 +472,8 @@ dropdown input:checked ~ ul {
     background-color: #3d3d3d;
     color: #ffffff;
     padding: 10px;
-    margin-bottom: 40px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 #upButton {

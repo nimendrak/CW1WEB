@@ -1,20 +1,28 @@
+@font-face {
+  font-family: Stylish;
+  src: url("Stylish-Classy-Font.ttf") format("woff");
+}
+
+@font-face {
+  font-family: Arial;
+  src: url("Arial.ttf") format("woff");
+}
 
 html {
   box-sizing: border-box;
 }
 
 h1{
-  font-family: "Lucida Handwriting";
+  font-family: Arial, serif;
   text-align: center;
   font-size: 50px;
   color: white;
 }
 body{
   background-image: url("aboutUsBg.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-size: 100%;
 }
 
 *, *:before, *:after {
@@ -31,8 +39,7 @@ body{
 
 /*styling profile cards*/
 .card1,.card2,.card3,.card4 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
-  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 18px 0 rgba(0, 0, 0, 0.2);  width: 250px;
   height: 474px;
   position: fixed;
   border-radius: 25px;
@@ -43,7 +50,6 @@ body{
   z-index: 2;
   -webkit-box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
   -moz-box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
-  box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
 }
 .profileCover{
   border-radius: 25px 25px 0 0;
@@ -59,7 +65,7 @@ body{
   z-index: 5;
   left: 25%;
   border: 1px solid white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 .container {
   padding: 15px;
@@ -81,12 +87,14 @@ body{
   color: goldenrod;
   text-align: left;
   font-size: 14px;
-  font-family: "Century Gothic";
+  font-family: Arial;
 }
+
 .about{
   position: absolute;
   top: 50%;
 }
+
 .description{
   text-align: left;
   font-family: Arial;
@@ -117,12 +125,12 @@ body{
 
 /*title name*/
 .manojName,.nimendraName,.nipunName,.janithName{
-  font-family: Cambria;
+  font-family: Arial, "Arial Rounded MT Bold";
+  font-weight: 800;
   font-size: 20px;
   position: absolute;
   top: 17px;
   text-align: center;
-  text-shadow: 2px 2px 4px black, 0 0 20px gold, 0 0 3px goldenrod;
   color: white;
 }
 .manojName{
