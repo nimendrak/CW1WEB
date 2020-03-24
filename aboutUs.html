@@ -2,159 +2,263 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="student03_css/cwnew%202.css" type="text/css">
-    <link rel="stylesheet" type="text/css" href="student04_css/galleryCSS/main.css">
-    <link rel="stylesheet" type="text/css" href="student04_css/nav.css">
-    <link rel="stylesheet" type="text/css" href="student04_css/footer.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="student04_images/logo/LankaWhite.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="student03_images/Presentation_page_SS.css">
+    <link rel="stylesheet" type="text/css" href="student03_images/nav.css">
+    <link rel="stylesheet" type="text/css" href="student03_images/footer.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="student03_images/LankaWhite.png">
     <title>Kingdom of Tambapaṇṇī | About us</title>
+    <style>
+        @font-face {
+            font-family: Heavy;
+            src: url("SoinSansNeue-Heavy.otf") format("woff");
+        }
+    </style>
 </head>
-<body style="background-image: url('student04_images/main/siteMapPageBackground.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-}">
-<div class="homeCover">
-    <!--stat navbar-->
-    <div class="nav">
-        <nav>
-            <div class="topnav" id="myTopnav">
-                <div class="nav-content">
-                    <a href="homePage.html"> <img src="student04_images/logo/logoWhite.png" class="logo" id="logo"
-                                                  alt=""/></a>
-                    <div class="nav-items">
-                        <a href="homePage.html">HOME</a>
-                        <div class="dropdown">
-                            <button class="dropbtn">DESTINATIONS
-                                <em class="fa fa-caret-down"></em>
-                            </button>
-                            <div class="dropdown-content">
-                                <a class="nav-a" href="allDestination.html"><em style='font-size:24px' class='far'>&#xf14e;</em>
-                                    All destinations</a>
-                                <a class="nav-a" href="kandyDestinationPage.html">Kandy</a>
-                                <a class="nav-a" href="colomboDestinationPage.html">Colombo</a>
-                                <a class="nav-a" href="galleDestinationPage.html">Galle</a>
-                                <a class="nav-a" href="sigiriyaDestinationPage.html">Sigiriya</a>
-                                <a class="nav-a" href="#">Nuwara-eliya</a>
-                                <a class="nav-a" href="#">Jaffna</a>
-                                <a class="nav-a" href="#">Polonnaruwa</a>
-                                <a class="nav-a" href="#">Arugambay</a>
-                                <a class="nav-a" href="#">Pasikuda</a>
-                            </div>
-                        </div>
+<body>
+<div id="navBar"">
+    <div id="logo"><a href="#"><img src="student03_images/logoWhite.png" alt="thambapanni"></a></div>
+    <a href="#" id="home">Home</a>
 
-                        <div class="dropdown">
-                            <button class="dropbtn">ACTIVITIES
-                                <em class="fa fa-caret-down"></em>
-                            </button>
-                            <div class="dropdown-content">
-                                <a class="nav-a" href="#"><em style='font-size:24px' class='fas'>&#xf7c9;</em> All
-                                    activites</a>
-                                <a class="nav-a" href="#">Whale & Dolphin Watching</a>
-                                <a class="nav-a" href="#">Hiking</a>
-                                <a class="nav-a" href="#">Elephant Watching</a>
-                                <a class="nav-a" href="#">Rafting</a>
-                                <a class="nav-a" href="#">Surfing</a>
-                            </div>
-                        </div>
-                        <a href="student02_images/ProductPage/ProductPage.html">SHOP</a>
-                        <a href="gallery.html">GALLERY</a>
-                        <a href="quiz.html">QUIZ</a>
-                        <a href="aboutUs.html">ABOUT US</a>
+    <div class="dropdown" id="destinations">
+        <button class="dropbtn">DESTINATIONS
+            <em class="fa fa-caret-down"></em>
+        </button>
+        <div class="dropdown-content">
+            <a class="nav-a" href="allDestination.html"><em style='font-size:24px' class='far'>&#xf14e;</em>
+                All destinations</a>
+            <a class="nav-a" href="kandyDestinationPage.html">Kandy</a>
+            <a class="nav-a" href="colomboDestinationPage.html">Colombo</a>
+            <a class="nav-a" href="galleDestinationPage.html">Galle</a>
+            <a class="nav-a" href="sigiriyaDestinationPage.html">Sigiriya</a>
+            <a class="nav-a" href="#">Nuwara-eliya</a>
+            <a class="nav-a" href="#">Jaffna</a>
+            <a class="nav-a" href="#">Polonnaruwa</a>
+            <a class="nav-a" href="#">Arugambay</a>
+            <a class="nav-a" href="#">Pasikuda</a>
+        </div>
+    </div>
+
+    <div class="dropdown" id="activities">
+        <button class="dropbtn">ACTIVITIES
+            <em class="fa fa-caret-down"></em>
+        </button>
+        <div class="dropdown-content">
+            <a class="nav-a" href="#"><em style='font-size:24px' class='fas'>&#xf7c9;</em> All
+                activites</a>
+            <a class="nav-a" href="#">Whale & Dolphin Watching</a>
+            <a class="nav-a" href="#">Hiking</a>
+            <a class="nav-a" href="#">Elephant Watching</a>
+            <a class="nav-a" href="#">Rafting</a>
+            <a class="nav-a" href="#">Surfing</a>
+        </div>
+    </div>
+
+    <a href="ProductPage.html" id="shop">SHOP</a>
+    <a href="gallery.html" id="gallery">GALLERY</a>
+    <a href="quiz.html" id="quiz">QUIZ</a>
+    <a href="aboutUs.html" id="about">ABOUT US</a>
+
+</div>
+<div class="rest">
+    <div style="margin-bottom: 12%">
+        <!--manoj-->
+        <div id="card-wrapper-mano">
+            <div id="flipcard-mano">
+                <div class="card1">
+                    <div>
+                        <img class="team" src="student03_images/manoj.jpg" alt="team1">
                     </div>
-                    <a href="javascript:void(0);" style="font-size:15px;" class="icon"
-                       onclick="myFunction()">&#9776;</a>
+                    <div>
+                        <img id="manoj" class="profileCover" src="student03_images/manoj.jpg" alt="Manoj"
+                             style="width:100%">
+                        <div class="manojName"><p style="font-weight: 800; font-family: Heavy, serif"><strong>MANOJ<br>LAKSHAN</strong>
+                        </p></div>
+                    </div>
+                    <div class="container">
+                        <div class="about">
+                            <p class="title"><i><b>about</b></i></p>
+                            <p class="description">I am seeking a competitive and challenging environment which would
+                                help me to enhance my knowledge and skills to reach the pinnacle in the computing and
+                                software engineering field</p>
+                        </div>
+                        <div><a href="mailto:manoj.2019274@iit.ac.lk"><img class="mail" src="student03_images/@.svg"
+                                                                           alt="mail"></a></div>
+                        <div><a href="https://www.facebook.com/manoj.max.902"><img class="fb"
+                                                                                   src="student03_images/fb.svg"
+                                                                                   alt="fb"></a></div>
+                        <div><a href="https://www.instagram.com/__manoj_lakshan_/"><img class="insta"
+                                                                                        src="student03_images/ig.svg"
+                                                                                        alt="insta"></a></div>
+                        <div><a href="https://www.linkedin.com/in/manoj-lakshan-ba670318a/"><img class="li"
+                                                                                                 src="student03_images/li.svg"
+                                                                                                 alt="li"></a></div>
+                        <button id="readMore-mano"><i>READ MORE</i></button>
+                    </div>
+                </div>
+                <div id="backSide-mano">
+                    <button id="goBack-mano"><i>GO BACK</i></button>
                 </div>
             </div>
-        </nav>
-    </div>
-</div>
-<div class="heading" style="color: #323232;">
-    <h1> Our Team</h1></div>
+        </div>
 
-<div class="container" style="margin-top: 8%;">
-    <div class="box">
-        <div class="imgBox">
-            <img src="student03_images/nipun01.jpg">
-            <div class="details">
-                <div class="content">
-                    <h3>Nupun Wijethunge </h3>
-                    <p>Student-01</p>
+        <!--nimendra-->
+        <div id="card-wrapper-nima">
+            <div id="flipcard-nima">
+                <div class="card2">
+                    <div>
+                        <img class="team" src="student03_images/nimendra.jpg" alt="team1">
+                    </div>
+                    <div>
+                        <img id="nimendra" class="profileCover" src="student03_images/nimendra.jpg" alt="Nimendra"
+                             style="width:100%">
+                        <div class="nimendraName"><p style="font-weight: 800; font-family: Heavy, serif">
+                            <strong>NIMENDRA<br>KARIYAWASAM</strong></p></div>
+                    </div>
+                    <div class="container">
+                        <div class="about">
+                            <p class="title"><i><b>about</b></i></p>
+                            <p class="description">I'm a experienced Graphic Designer<br>and a Programmer who is
+                                outgoing and energetic young professional, seeking a career that suits my skills which
+                                able to serve the organization to meet and surpass its goals.</p>
+                        </div>
+                        <div><a href="mailto:Nimendra.2019264@iit.ac.lk"><img class="mail" src="student03_images/@.svg"
+                                                                              alt="mail"></a></div>
+                        <div><a href="https://www.facebook.com/nimendra.kariyawasam"><img class="fb"
+                                                                                          src="student03_images/fb.svg"
+                                                                                          alt="fb"></a></div>
+                        <div><a href="https://www.instagram.com/nimendra._/"><img class="insta"
+                                                                                  src="student03_images/ig.svg"
+                                                                                  alt="insta"></a></div>
+                        <div><a href="https://www.linkedin.com/in/nimendra-kariyawasam-7a6638188/"><img class="li"
+                                                                                                        src="student03_images/li.svg"
+                                                                                                        alt="li"></a>
+                        </div>
+                        <button id="readMore-nima"><i>READ MORE</i></button>
+                    </div>
+                </div>
+                <div id="backSide-nima">
+                    <button id="goBack-nima"><i>GO BACK</i></button>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="box">
-        <div class="imgBox">
-            <img src="student03_images/manoj01.jpg">
-            <div class="details">
-                <div class="content">
-                    <h3>Manoj Lakshan</h3>
-                    <p>Student-02</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="box">
-        <div class="imgBox">
-            <img src="student03_images/janith01.jpg">
-            <div class="details">
-                <div class="content">
-                    <h3>Janith Palihawadana</h3>
-                    <p>Student-03</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="box">
-        <div class="imgBox">
-            <img src="student03_images/thavidu02.jpg">
-            <div class="details">
-                <div class="content">
-                    <h3>Nimendra Kariyawasam</h3>
-                    <p>Student-04</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!--footer-->
-<footer class="site-footer">
-    <div class="content">
-        <div class="footer-grids">
-            <div class="footer one" style="height: 235px; border-right: 2px solid #999; padding: 0 40px 0 0;">
-                <h3 style="text-align: right;">© Tambapanni</h3>
-                <p style="text-align: right">419, 1, Ramakrishna Road, Wellawatte,<br>Colombo 06, Sri Lanka.</p>
-                <p style="padding-top: 20px; text-align: right">The country’s colourful past has given birth to
-                    intriguing tales which have been passed down through the generations. These tales are sewn into the
-                    fabric of Sri Lankan society, and they continue to influence the narrative of the country.</p>
+        <!--nipun-->
+        <div id="card-wrapper-nip">
+            <div id="flipcard-nip">
+                <div class="card3">
+                    <div>
+                        <img class="team" src="student03_images/nipun.jpg" alt="team1">
+                    </div>
+                    <div>
+                        <img id="nipun" class="profileCover" src="student03_images/nipun.jpg" alt="Nipun"
+                             style="width:100%">
+                        <div class="nipunName"><p style="font-weight: 800; font-family: Heavy, serif"><strong>NIPUN<br>WIJETUNGE</strong>
+                        </p></div>
+                    </div>
+                    <div class="container">
+                        <div class="about">
+                            <p class="title"><i><b>about</b></i></p>
+                            <p class="description">I'm software engineering undergraduate who has got a die hard passion
+                                for computing, seeking a career that suits my skills which able to serve the
+                                organization to meet and surpass its goals.</p>
+                        </div>
+                        <div><a href="mailto:nipun.2019268@iit.ac.lk"><img class="mail" src="student03_images/@.svg"
+                                                                           alt="mail"></a></div>
+                        <div><a href="https://www.facebook.com/nipun.vidusara"><img class="fb"
+                                                                                    src="student03_images/fb.svg"
+                                                                                    alt="fb"></a></div>
+                        <div><a href="https://www.instagram.com/_nipqa_/"><img class="insta"
+                                                                               src="student03_images/ig.svg"
+                                                                               alt="insta"></a></div>
+                        <div><a href="https://www.linkedin.com/in/nipun-vidusara-9baa83184/"><img class="li"
+                                                                                                  src="student03_images/li.svg"
+                                                                                                  alt="li"></a></div>
+                        <button id="readMore-nip"><i>READ MORE</i></button>
+                    </div>
+                </div>
+                <div id="backSide-nip">
+                    <p>dsbefbebfwbdhjbcl</p>
+                    <button id="goBack-nip"><i>GO BACK</i></button>
+                </div>
+            </div>
+        </div>
+
+        <!--janith-->
+        <div id="card-wrapper-jani">
+            <div id="flipcard-jani">
+                <div class="card4">
+                    <div>
+                        <img class="team" src="student03_images/janith.jpeg" alt="team1">
+                    </div>
+                    <div>
+                        <img id="janith" class="profileCover" src="student03_images/janith.jpeg" alt="Janith"
+                             style="width:100%">
+                        <div class="janithName"><p style="font-weight: 800; font-family: Heavy, serif">
+                            <strong>JANITH<br>PALIHAWADANA</strong>
+                        </p></div>
+                    </div>
+                    <div class="container">
+                        <div class="about">
+                            <p class="title"><i><b>about</b></i></p>
+                            <p class="description">I am an energetic,dedicated and hardworking Software Engineering
+                                Undergrduate Who is eager to engage in challenging problems</p>
+                        </div>
+                        <div><a href="mailto:janith.2019263@iit.ac.lk"><img class="mail" src="student03_images/@.svg"
+                                                                            alt="mail"></a></div>
+                        <div><a href="https://www.facebook.com/janith.palihawadana"><img class="fb"
+                                                                                         src="student03_images/fb.svg"
+                                                                                         alt="fb"></a></div>
+                        <div><a href="https://www.instagram.com/janithpalihawadana/"><img class="insta"
+                                                                                          src="student03_images/ig.svg"
+                                                                                          alt="insta"></a></div>
+                        <div><a><img class="li" src="student03_images/li.svg" alt="li"></a></div>
+                        <button id="readMore-jani"><i>READ MORE</i></button>
+                    </div>
+                </div>
+                <div id="backSide-jani">
+                    <button id="goBack-jani"><i>GO BACK</i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <footer class="site-footer">-->
+    <div id="footer-content">
+        <div id="footer-grids" class="footer-grids">
+            <div class="footer one"
+                 style="height: 235px; border-right: 2px solid #999; padding: 0 40px 0 0; margin-top: 30px">
+                <h3 style="text-align: right">© Tambapanni</h3>
+                <p style="text-align: right" class="text">419, 1,Ramakrishna Road, Wellawatte,<br>Colombo 06, Sri Lanka.
+                </p>
+                <p style="padding-top: 20px; text-align: right" class="text">The country’s colourful past has given
+                    birth to intriguing tales which have been passed down through the generations. These tales are sewn
+                    into the fabric of Sri Lankan society, and they continue to influence the narrative of the
+                    country.</p>
                 <div class="clear"></div>
             </div>
-            <div class="footer three">
+            <div id="footer-three" class="footer three">
                 <h3 style="padding-left: 40px">About us</h3>
                 <ul>
-                    <p>Join us on this journey of discovery, and let the Tambapanni inspire you to visit this wonderful
-                        and exciting island that has brought joy to so many.</p>
+                    <p class="text">Join us on this journey of discovery, and let the Tambapanni inspire you to visit
+                        this wonderful and exciting island that has brought joy to so many.</p>
                     <a href="siteMap.html">
                         <button class="button">Site Map</button>
                     </a>
-                    <a href="cv/cv%20-%20Manoj.html">
+                    <a href="cv/cv%20-%20Janith.html">
                         <button class="button">Editor CV</button>
                     </a>
                 </ul>
             </div>
-            <div class="footer two" style="padding-left: 100px;">
+            <div id="footer-two" class="footer two" style="height: 300px">
                 <h3>Keep Connected</h3>
                 <ul>
-                    <li><a class="fb" href="#"><i></i>Like us on Facebook</a></li>
-                    <li><a class="fb1" href="#"><i></i>Follow us on Twitter</a></li>
+                    <li><a id="fb" class="fb" href="#"><i></i>Like us on Facebook</a></li>
+                    <li><a id="fb1" class="fb1" href="#"><i></i>Follow us on Twitter</a></li>
                 </ul>
-                <a href="feedback.html">
-                    <button class="button" style="margin-top: 27px;">Drop a feedback</button>
-                </a>
+                <button class="button" style="margin-top: 100px;">Drop a feedback</button>
             </div>
-
             <div class="clear"></div>
         </div>
         <div class="copy-right-grids">
@@ -163,14 +267,15 @@
             </div>
             <div class="copy-right">
                 <ul>
-                    <li><a href="allDestination.html">Destinations</a></li>
+                    <li><a href="#">Destinations</a></li>
                     <li><a href="#">Activities</a></li>
-                    <li><a href="student02_images/ProductPage/ProductPage.html">Shop</a></li>
+                    <li><a href="#">Shop</a></li>
                 </ul>
             </div>
             <div class="clear"></div>
         </div>
     </div>
-</footer>
+    <!--footer end-->
+</div>
 </body>
 </html>
